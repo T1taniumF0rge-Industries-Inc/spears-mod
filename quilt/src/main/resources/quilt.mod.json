@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "com.t1taniumforge.spears",
+    "id": "spearsmod",
+    "version": "${version}",
+    "entrypoints": {
+      "init": "com.t1taniumforge.spears.quilt.QuiltSpearsEntrypoint"
+    },
+    "metadata": {
+      "name": "Spears Mod",
+      "description": "Adds pre-1.21.11 spear gameplay with jab + lunge mechanics."
+    }
+  }
+}

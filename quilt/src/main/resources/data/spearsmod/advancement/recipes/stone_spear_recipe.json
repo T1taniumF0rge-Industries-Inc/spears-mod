@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "spearsmod:stone_spear_recipe"
+      }
+    }
+  },
+  "requirements": [["has_recipe"]],
+  "rewards": {
+    "recipes": ["spearsmod:stone_spear_recipe"]
+  }
+}

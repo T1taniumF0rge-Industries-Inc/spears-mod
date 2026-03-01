@@ -1,0 +1,2 @@
+rootProject.name = 'spears-mod'
+include 'common', 'fabric', 'forge', 'neoforge', 'quilt'
