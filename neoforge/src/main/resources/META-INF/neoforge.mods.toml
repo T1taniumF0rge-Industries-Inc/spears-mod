@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="spearsmod"
+version="${file.jarVersion}"
+displayName="Spears Mod"
+description='''
+Adds pre-1.21.11 spear gameplay with jab + lunge mechanics.
+'''

@@ -1,0 +1,27 @@
+plugins {
+    id 'base'
+}
+
+allprojects {
+    group = 'com.t1taniumforge.spears'
+    version = '0.1.0-mc1.21.8'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+        withSourcesJar()
+    }
+
+    tasks.withType(Test).configureEach {
+        useJUnitPlatform()
+    }
+}
