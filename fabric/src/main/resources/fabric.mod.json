@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "spearsmod",
+  "version": "${version}",
+  "name": "Spears Mod",
+  "description": "Adds pre-1.21.11 spear gameplay with jab + lunge mechanics.",
+  "authors": [
+    "T1taniumF0rge"
+  ]
+}

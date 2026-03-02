@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "com.titan1um.spears",
+    "id": "spearsmod",
+    "version": "${version}",
+    "metadata": {
+      "name": "Spears Mod",
+      "description": "Adds pre-1.21.11 spear gameplay with jab + lunge mechanics."
+    }
+  }
+}
