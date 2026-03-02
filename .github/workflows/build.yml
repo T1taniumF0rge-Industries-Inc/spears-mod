@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
       - name: Quality scan
         run: ./scripts/quality-scan.sh
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
       - name: Build ${{ matrix.loader }}
         run: ./scripts/build-artifacts.sh ${{ matrix.loader }}

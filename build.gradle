@@ -2,9 +2,14 @@ plugins {
     id 'base'
 }
 
+ext {
+    modVersion = '0.1.0'
+    mcVersion = '1.21.8'
+}
+
 allprojects {
-    group = 'com.t1taniumforge.spears'
-    version = '0.1.0-mc1.21.8'
+    group = 'com.titan1um.spears'
+    version = modVersion
 
     repositories {
         mavenCentral()
@@ -15,13 +20,24 @@ subprojects {
     apply plugin: 'java'
 
     java {
-        toolchain {
-            languageVersion = JavaLanguageVersion.of(21)
-        }
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
         withSourcesJar()
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.release = 17
     }
 
     tasks.withType(Test).configureEach {
         useJUnitPlatform()
+    }
+
+    if (name != 'common') {
+        tasks.named('jar', Jar).configure {
+            archiveBaseName = 'spears'
+            archiveVersion = "${modVersion}-${project.name}-${mcVersion}"
+            archiveClassifier = ''
+        }
     }
 }

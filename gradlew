@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [[ -d "$HOME/.local/share/mise/installs/java/21.0.2" ]]; then
-  export JAVA_HOME="$HOME/.local/share/mise/installs/java/21.0.2"
-  export PATH="$JAVA_HOME/bin:$PATH"
-fi
+MISE_JAVA_DIR="$HOME/.local/share/mise/installs/java"
+for candidate in 21.0.2 21 17.0.2 17; do
+  if [[ -d "$MISE_JAVA_DIR/$candidate" ]]; then
+    export JAVA_HOME="$MISE_JAVA_DIR/$candidate"
+    export PATH="$JAVA_HOME/bin:$PATH"
+    break
+  fi
+done
 
 GRADLE_VERSION="8.10.2"
 DIST_DIR=".gradle-bin"
