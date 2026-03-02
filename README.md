@@ -14,7 +14,7 @@ This mods introduces the **spear** in versions before they were added (before 1.
 - Fabric
 - _Quilt (beta)_
 
-## Scripts
+## [Scripts](https://github.com/T1taniumF0rge-Industries-Inc/spears-mod/tree/main/scripts)
 ### Build
 ```bash
 ./scripts/build-artifacts.sh neoforge
