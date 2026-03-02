@@ -4,8 +4,10 @@ license="MIT"
 
 [[mods]]
 modId="spearsmod"
-version="${file.jarVersion}"
+version="${version}"
 displayName="Spears"
+authors="Titan1um, Polr"
+displayURL="https://modrinth.com/mod/spears"
 description='''
 Adds spears in versions before their addition to the game!
 '''

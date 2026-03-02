@@ -7,5 +7,13 @@
   "authors": [
     "Titan1um",
     "Polr"
-  ]
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/spears"
+  },
+  "entrypoints": {
+    "main": [
+      "com.titan1um.spears.fabric.FabricSpearsEntrypoint"
+    ]
+  }
 }
