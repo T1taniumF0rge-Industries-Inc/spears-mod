@@ -5,7 +5,7 @@ license="MIT"
 [[mods]]
 modId="spearsmod"
 version="${file.jarVersion}"
-displayName="Spears Mod"
+displayName="Spears"
 description='''
-Adds pre-1.21.11 spear gameplay with jab + lunge mechanics.
+Adds spears in versions before their addition to the game!
 '''
