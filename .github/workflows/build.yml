@@ -1,7 +1,6 @@
 name: Build
 permissions:
   contents: read
-  id-token: write
 
 on:
   push:
@@ -46,6 +45,17 @@ jobs:
   attest-build-provenance:
     runs-on: ubuntu-latest
     needs: build-loader
-    steps:          
-      - name: Attest Build Provenance
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Attest build provenance
         uses: actions/attest-build-provenance@v4.1.0
+        with:
+          subject-path: 'artifacts/**/*.jar'
