@@ -1,3 +1,10 @@
 dependencies {
     implementation project(':common')
 }
+
+tasks.processResources {
+    inputs.property 'version', project.version
+    filesMatching('META-INF/mods.toml') {
+        expand(version: project.version)
+    }
+}

@@ -4,10 +4,25 @@
     "group": "com.titan1um.spears",
     "id": "spearsmod",
     "version": "${version}",
+    "intermediate_mappings": "net.fabricmc:intermediary",
     "metadata": {
       "name": "Spears",
-      "description": "Adds spears in versions before their addition to the game!"
+      "description": "Adds spears in versions before their addition to the game!",
+      "contact": {
+        "homepage": "https://modrinth.com/mod/spears"
+      }
     },
+    "entrypoints": {
+      "main": [
+        "com.titan1um.spears.quilt.QuiltSpearsEntrypoint"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": ">=0.30.0-beta.3"
+      }
+    ],
     "authors": [
       "Titan1um",
       "Polr"
