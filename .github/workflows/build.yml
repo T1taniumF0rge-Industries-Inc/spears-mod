@@ -41,3 +41,5 @@ jobs:
         with:
           name: ${{ matrix.loader }}-artifact
           path: ${{ matrix.loader }}/build/libs/*.jar
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v4.1.0
