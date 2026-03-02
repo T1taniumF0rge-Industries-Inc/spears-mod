@@ -3,7 +3,7 @@ plugins {
 }
 
 ext {
-    modVersion = '0.1.0'
+    modVersion = '1.0.0'
     mcVersion = '1.21.8'
 }
 
@@ -36,7 +36,7 @@ subprojects {
     if (name != 'common') {
         tasks.named('jar', Jar).configure {
             archiveBaseName = 'spears'
-            archiveVersion = "${modVersion}-${project.name}-${mcVersion}"
+            archiveVersion = "${modVersion}"
             archiveClassifier = ''
         }
     }

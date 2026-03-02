@@ -6,7 +6,11 @@
     "version": "${version}",
     "metadata": {
       "name": "Spears",
-      "description": "Adds spears in versions before their addition to the game!",
-    }
+      "description": "Adds spears in versions before their addition to the game!"
+    },
+    "authors": [
+      "Titan1um",
+      "Polr"
+    ]
   }
 }
